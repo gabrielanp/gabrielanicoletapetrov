@@ -5,7 +5,20 @@ body {
     padding: 0;
     color: #333;
     background-color: #f8f8f8;
+
+    width: 100vw;
+    overflow-x: hidden;
 }
+
+.container {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .nav-toggle {
     display: none;
 }
