@@ -9,6 +9,15 @@ body {
 .nav-toggle {
     display: none;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #b5838d; /* Change color on hover */
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
