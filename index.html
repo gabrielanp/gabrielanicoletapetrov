@@ -84,4 +84,18 @@
         </div>
     </footer>
 </body>
+    /* JavaScript to Toggle Navigation */
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navToggle = document.createElement("button");
+        navToggle.classList.add("nav-toggle");
+        navToggle.innerHTML = "&#9776;";
+        document.querySelector(".main-header").appendChild(navToggle);
+
+        navToggle.addEventListener("click", function () {
+            document.querySelector(".navigation ul").classList.toggle("active");
+        });
+    });
+</script>
+
 </html>
