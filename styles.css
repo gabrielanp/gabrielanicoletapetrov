@@ -5,8 +5,6 @@ body {
     padding: 0;
     color: #333;
     background-color: #f8f8f8;
-    padding-top: 80px; /* This ensures the content is not hidden under the fixed header */
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
@@ -29,14 +27,21 @@ h1, h2, h3 {
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 .logo {
     font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
     font-weight: bold;
 }
 
@@ -65,7 +70,7 @@ h1, h2, h3 {
     color: #b5838d;
 }
 
-/* Responsive Navigation */
+/* Responsive Navigation - Hamburger only on mobile */
 .nav-toggle {
     display: none;
     cursor: pointer;
@@ -78,6 +83,10 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
     .navigation ul {
         display: none;
         flex-direction: column;
@@ -99,4 +108,3 @@ h1, h2, h3 {
         display: block;
     }
 }
-
