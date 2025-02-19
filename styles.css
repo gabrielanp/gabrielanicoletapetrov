@@ -159,3 +159,36 @@ blockquote {
     padding: 20px;
     text-align: center;
 }
+/* Hide default navigation on mobile */
+@media (max-width: 768px) {
+    .navigation ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+
+    .navigation ul.active {
+        display: flex;
+    }
+
+    /* Make the hamburger menu button visible */
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+        background: none;
+        border: none;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+    }
+}
+
