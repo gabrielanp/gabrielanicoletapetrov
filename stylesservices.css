@@ -1,28 +1,19 @@
-/* Services Page Styles */
 
-/* General Styles */
-.container {
-    width: 95%;
-    margin: auto;
-}
 
-.container .section {
+.section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 100px 0;
 }
-
-.container .section:nth-child(odd) {
+.section:nth-child(odd) {
     flex-direction: row; /* Text on left, Image on right */
 }
-
-.container .section:nth-child(even) {
+ .section:nth-child(even) {
     flex-direction: row-reverse; /* Text on right, Image on left */
 }
-
-.container .text-content {
+.text-content {
     width: 48%;
     text-align: left;
     padding: 20px;
@@ -33,12 +24,11 @@
     margin-bottom: 10px;
 }
 
-.container .text-content p {
+.text-content p {
     font-size: 1.2em;
     margin-bottom: 20px;
 }
-
-.container .appointment-button {
+ .appointment-button {
     display: inline-block;
     background-color: #3f4636;
     color: white;
@@ -50,17 +40,17 @@
     transition: background 0.3s ease-in-out;
 }
 
-.container .appointment-button:hover {
+ .appointment-button:hover {
     background-color: #384435;
 }
 
-.container .image-content {
+.image-content {
     width: 48%;
     display: flex;
     justify-content: center;
 }
 
-.container .image-content img {
+ .image-content img {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -69,18 +59,18 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .container .section {
+     .section {
         flex-direction: column;
         text-align: center;
         padding-top: 80px;
     }
 
-    .container .text-content, .container .image-content {
+    .text-content, .container .image-content {
         width: 100%;
         text-align: center;
     }
 
-    .container .text-content {
+    .text-content {
         padding: 10px;
     }
 }
