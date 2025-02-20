@@ -1,0 +1,79 @@
+/* Services Page Styles */
+
+/* General Styles */
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.container .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 150px;
+}
+
+.container .section:nth-child(odd) {
+    flex-direction: row; /* Image on left, text on right */
+}
+
+.container .section:nth-child(even) {
+    flex-direction: row-reverse; /* Image on right, text on left */
+}
+
+.container .text-content {
+    width: 48%;
+    text-align: left;
+}
+
+.container .text-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.container .text-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.container .appointment-button {
+    display: inline-block;
+    background-color: #3f4636;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.container .appointment-button:hover {
+    background-color: #384435;
+}
+
+.container .image-content {
+    width: 48%;
+}
+
+.container .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container .section {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .container .text-content, .container .image-content {
+        width: 100%;
+        text-align: center;
+    }
+}
