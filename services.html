@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Gabby Petrov</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aboutstyles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="Petrov.png" alt="Gabby Petrov Logo" style="height: 50px; vertical-align: middle;">
+                
+            </a>
+        </h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  
+        <div class="section">
+            <div class="text-content">
+                <h2>Career Transition</h2>
+                <p>Navigate career challenges with confidence and purpose.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="career-transition.jpg" alt="Career Transition">
+            </div>
+        </div>
+
+        <!-- Workshops -->
+        <div class="section">
+            <div class="text-content">
+                <h2>Public Speaking</h2>
+                <p>Master the art of impactful public speaking.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="public-speaking.jpg" alt="Public Speaking">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-content">
+                <h2>Time Management</h2>
+                <p>Optimize your schedule for better efficiency.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="time-management.jpg" alt="Time Management">
+            </div>
+        </div>
+
+        <!-- Online Courses -->
+        <div class="section">
+            <div class="text-content">
+                <h2>Self-Discipline Mastery</h2>
+                <p>Techniques for self-motivation and consistency.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="self-discipline.jpg" alt="Self-Discipline Mastery">
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="text-content">
+                <h2>Work-Life Balance</h2>
+                <p>Strategies for maintaining a balanced lifestyle.</p>
+                <button class="appointment-button" onclick="openCalendly()">Make an Appointment</button>
+            </div>
+            <div class="image-content">
+                <img src="work-life-balance.jpg" alt="Work-Life Balance">
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Gabby Petrov | All Rights Reserved</p>
+        </div>
+    </footer>
+   
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navToggle = document.createElement("button");
+        navToggle.classList.add("nav-toggle");
+        navToggle.innerHTML = "&#9776;";
+        document.querySelector(".main-header").appendChild(navToggle);
+
+        navToggle.addEventListener("click", function () {
+            document.querySelector(".navigation ul").classList.toggle("active");
+        });
+    });
+</script>
+</body>
+</html>
